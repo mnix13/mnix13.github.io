@@ -1,130 +1,121 @@
-<!DOCTYPE>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <title>Food Is Life | Ingredients</title>
+<title>Page Title</title>
+<style>
+h1 { 
+font-family: arial, sans-serif;
+text-shadow: 3px 2px grey;
+text-align: center;
+}
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      <col width="20">
+      <col width="80">
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+  a:link {color:green;   /* initial apperance of the link */
+        text-decoration:none;
+        font-weight:bold;
+  }
+  a:hover { 
+        color:blue;  
+        text-decoration:underlined;
+        font-weight:bold;
+  }
+  und {
+    color:grey;
+
+  }
+  li {
+    text-align: left;
+    }
+
+</style>
 </head>
-
 <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Food Is Life</a>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <!-- Home -->
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <!-- Ingredients dropdown -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ingredients<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/models/ingredients/ingredients.html">Ingredients</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="/models/ingredients/onion.html">Onion</a></li>
-                <li><a href="/models/ingredients/celery.html">Celery</a></li>
-                <li><a href="/models/ingredients/carrot.html">Carrot</a></li>
-              </ul>
-            </li>
+<h1>Ingredients</h1>
+<table>
+  <tr>
+    <th>
+    <th>Ingredient Name</th>
+    <th>Seasonal Availability</th>
+    <th>Purpose</th>
+    <th>Locations of Production</th>
+    <th>Additional Properties</th>
+  </tr>
+  <tr>
+    <td> <img src="/images/Yellw-Onions.jpg" alt="Yellow Onions jpg" style="width:128px;height:128px;"></td>
+    <td><a href="yellow-onion-page.html">Yellow Onions</a></td>
+    <td>March-May</td>
+    <td>Depending on how it is cooked yellow onions can provide a sharp flavorful kick ranging from sweet to pungent. </td>
+    <td>Grown globally</td>
+    <td><und>Medicinal properties:</und>
+      <ul>
+          <li>Improving immunity</li>
+            <li>assisting in the regulation of blood sugar</li>
+            <li>reducing inflammation and healing infections</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> <img src="/images/Carrots.jpg" alt="Carrots jpg" style="width:128px;height:128px;"></td>
+    <td><a href="carrot-page.html">Carrots</a></td>
+    <td>Year round</td>
+     <td>Carrots can add texture and a slight sweetness to any dish. When cooked well, carrots can become even sweeter.</td>
+    <td>
+      <ul>
+          <li>Russia</li>
+            <li>Japan</li>
+            <li>The United States</li> 
+            <li>France</li> 
+            <li>The United Kingdom</li>
+    <td><und>Medicinal properties and health benefits:</und>
+      <ul>
+          <li>Reducing risk of cancer</li>
+          <li>Heart disease and stroke</li>
+          <li>Improving vision and dental health</li>
+          <li>Nourishes skin</li>
+      </ul> 
+    </td>
+  </tr>
+  <tr>
+  <td> <img src="/images/Ginger.jpg" alt="Ginger jpg" style="width:128px;height:128px;"></td>
+   <td><a href="ginger-page.html">Ginger</a></td>
+    <td>Year round</td>
+     <td>Ginger adds spice to a dish without additional fat or calories.</td>
+    <td>
+      <ul>
+          <li>India</li>
+            <li>China</li>
+            <li>Nepal</li> 
+            <li>Nigeria</li> 
+            <li>Thailand</li>
+    <td><und>Medicinal properties:</und>
+      <ul>
+          <li>Home remedy for nausea</li>
+          <li>Pain reduction</li>
+          <li>Reduces inflammation</li>
+          <li>highly nutritional in vitamins and minerals</li>
+      </ul> 
+    </td>
+  </tr>
+</table>
 
-            <!-- Recipes dropdown -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/models/recipes/recipes.html">Recipes</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="/models/recipes/mirepoix.html">Mirepoix</a></li>
-                <li><a href="/models/recipes/pico.html">Pico de Gallo</a></li>
-                <li><a href="/models/recipes/salad.html">Salad</a></li>
-              </ul>
-            </li>
-
-            <!-- Cuisine dropdown -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuisines<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/models/cuisines/cuisines.html">Cuisines</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="/models/cuisines/french.html">French</a></li>
-                <li><a href="/models/cuisines/mexican.html">Mexican</a></li>
-                <li><a href="/models/cuisines/american.html">American</a></li>
-              </ul>
-            </li>
-
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-    <!--Body-->
-    <div id="main">
-        <h1>Ingredients</h1>
-        <hr />
-        <table class="table-striped table-bordered">
-            <tr>
-                <th>Ingredient Name</th>
-                <th>Seasonal Availability</th>
-                <th>Purpose</th>
-                <th>Location</th>
-                <th>Additional Properties</th>
-            </tr>
-            <tr>
-                <td>Yellow Onion</td>
-                <td>March-May</td>
-                <td>Depending on how it is cooked onions can provide a sharp flavorful kick ranging from sweet to pungent. </td>
-                <td>Grown globally</td>
-                <td>Medicinal properties:
-                    <ul>
-                        <li>Improving immunity</li>
-                        <li>assisting in the regulation of blood sugar</li>
-                        <li>reducing inflammation and healing infections</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Carrot</td>
-                <td>Year round</td>
-                <td>something</td>
-                <td>
-                    <ul>
-                        <li>Russia</li>
-                        <li>Japan</li>
-                        <li>The United States</li>
-                        <li>France</li>
-                        <li>The United Kingdom</li>
-                        <td>Medicinal properties and health benefits:
-                            <ul>
-                                <li>Reducing risk of cancer</li>
-                                <li>Heart disease and stroke</li>
-                                <li>Improving vision and dental health</li>
-                                <li>Nourishes skin</li>
-                            </ul>
-                        </td>
-            </tr>
-            <tr>
-                <td>Ginger</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-            </tr>
-        </table>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
-
 </html>
+
+
+
