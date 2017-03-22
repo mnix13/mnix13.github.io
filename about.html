@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -20,18 +21,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <!-- Home -->
-            <li><a href="#">Home></a></li>
+            <li><a href="#">Home</a></li>
             <!-- Ingredients dropdown -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ingredients<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Ingredients</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Onion</a></li>
+                <li><a href="#">Celery</a></li>
+                <li><a href="#">Carrot</a></li>
               </ul>
             </li>
 
@@ -39,13 +38,11 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Recipes</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Mirepoix</a></li>
+                <li><a href="#">Pico de Gallo</a></li>
+                <li><a href="#">Salad</a></li>
               </ul>
             </li>
 
@@ -53,16 +50,14 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuisines<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Cuisines</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">French</a></li>
+                <li><a href="#">Mexican</a></li>
+                <li><a href="#">American</a></li>
               </ul>
             </li>
-			
+
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Home</a></li>
@@ -70,6 +65,122 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="page-header">
+                    <i class="fa fa-bar-chart" aria-hidden="true">
+                    </i>About Us</h2><hr>
+            </div>
+        </div><br>
+		
+		<!-- Team Members Row -->
+        <!--    the group name
+                the group members
+                for each member:
+					photo
+					name
+                    bio
+                    major responsibilities -->
+		
+		<div class="row">
+            <div class="col-lg-6 text-center">
+                <img class="img-circle img-responsive img-center" src="/maggie.jpg" alt="photo of maggie">
+                <h3 class="about-text">Maggie Nix</h3>
+                <p class="about-text">Senior MIS Major</p>
+                <p class="about-text">Major Responsibilities: GitHub Setup, Splash Page, About Page</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img class="img-circle img-responsive img-center" src="/noah.jpg" alt="photo of noah">
+                <h3 class="about-text">Noah Escamilla</h3>
+                <p class="about-text">Senior MIS Major</p>
+                <p class="about-text">Major Responsibilities: Artistic Direction</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img class="img-circle img-responsive img-center" src="/cassandra.jpg" alt="photo of cassandra">
+                <h3 class="about-text">Cassandra Galindez</h3>
+                <p class="about-text">Mathematics Major with a specialization in Computational Sciences</p>
+                <p class="about-text">Major Responsibilities: Three pillar pages</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img class="img-circle img-responsive img-center" src="/ian.jpg" alt="photo of ian">
+                <h3 class="about-text">Ian Mobbs</h3>
+                <p class="about-text">Junior MIS Major</p>
+                <p class="about-text">Major Responsibilities: Templates and Sytling</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img class="img-circle img-responsive img-center" src="/arti.jpg" alt="photo of arti">
+                <h3 class="about-text">Arti Kumar</h3>
+                <p class="about-text">Junior MIS Major</p>
+                <p class="about-text">Major Responsibilities: Content</p>
+            </div>
+		<br />
+		<br />
+		<!-- Stats -->
+        <!-- stats:
+                total no. of commits
+                total no. of issues-->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="page-header">
+                    <i class="fa fa-bar-chart" aria-hidden="true">
+                    </i>  Stats</h2><hr>
+                <h4>Total # of commits : 0</h4>
+                <h4>Total # of issues : 0</h4>
+            </div>
+        </div><br>
+		
+		
+		<!-- Links -->
+            <!--a link to the Apiary API
+                a link to the GitHub Issue Tracker
+                a link to the GitHub Repo
+                a link to the GitHub Wiki -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="page-header">
+                    <i class="fa fa-link" aria-hidden="true">
+                    </i>  Links</h2><hr>
+                <h4><a href="https://github.com/mnix13/mnix13.github.io/issues">GitHub Issue Tracker</a>
+                <h4><a href="https://github.com/mnix13/mnix13.github.io/">GitHub Repo</a>
+                <h4><a href="https://github.com/mnix13/mnix13.github.io/wiki">GitHub Wiki</a>   
+            </div>
+        </div><br>
+		
+		
+		 <!-- Tools -->
+        <!-- tools:
+                tools used  -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="page-header"><i class="fa fa-wrench" aria-hidden="true">
+                </i>  Tools</h2><hr>
+                <h4>Bootstrap</h4>
+                <h4>GitHub</h4>
+                <h4>Slack</h4>
+            </div>
+        </div>
+		
+		
+        <!-- Data -->
+        <!-- data:
+            links to the data sources
+            description of how each was scraped-->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="page-header">
+                    <i class="fa fa-database" aria-hidden="true">
+                    </i>  Data</h2><hr>
+                <h4><a href=""></a></h4>
+            </div>
+        </div><br>
+    </div>
+	
+	
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
