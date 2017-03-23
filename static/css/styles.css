@@ -2,11 +2,17 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
-
+	
 .jumbrotron{
 	
 	background-image: url("../img/splash.jpg");
 	background-position: center;
+}
+
+#jumboSplash {
+	background-image: url("../img/splash.jpg");
+	background-position: center;
+	text-align: center;
 }
 /*
 table {
