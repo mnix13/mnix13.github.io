@@ -3,13 +3,13 @@ body {
     margin-right: 10%;
 }
 	
-body > .main > .jumbotron{
+html > body > #main > .jumbotron{
 	
 	background-image: url("../img/splash.jpg");
 	background-position: center;
 	
 }
-body > .main > .jumbotron > .container{
+html > body > #main > .jumbotron > .container{
 	text-align: center;
 	background-color: black;	
 }
