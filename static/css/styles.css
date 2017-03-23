@@ -3,7 +3,7 @@ body {
     margin-right: 10%;
 }
 	
-html > body > nav > .container-fluid > #bs-example-navbar-collapse-1 {
+.navbar-nav {
 	background-color: black;
 	color: white;
 }	
@@ -11,13 +11,13 @@ html > body > nav > .container-fluid > #bs-example-navbar-collapse-1 {
 html > body > #main > .jumbotron{
 	
 	background-image: url("../img/splash.jpg");
-	background-size: contain;
+	background-size: 100% 100%;
 	background-position: center;
 	
 }
 html > body > #main > .jumbotron > .container{
 	text-align: center;
-	color: black
+	color: white;
 }
 
 /*
