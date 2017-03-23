@@ -15,6 +15,11 @@ html > body > #main > .jumbotron > .container{
 	color: white;
 }
 
+#slideshow {
+	display: block;
+	margin: auto; 
+}
+
 /*
 table {
     font-family: arial, sans-serif;
