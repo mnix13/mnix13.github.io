@@ -1,50 +1,9 @@
+
 <!DOCTYPE>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/styles.css" />
-	
-	<style>
-h1 { 
-font-family: arial, sans-serif;
-text-shadow: 3px 2px grey;
-text-align: center;
-}
-  table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-      <col width="20">
-      <col width="80">
-  }
-
-  td, th {
-      border: 1px solid #dddddd;
-      text-align: center;
-      padding: 8px;
-  }
-
-  tr:nth-child(even) {
-      background-color: #dddddd;
-  }
-  a:link {color:green;   /* initial apperance of the link */
-        text-decoration:none;
-        font-weight:bold;
-  }
-  a:hover { 
-        color:blue;  
-        text-decoration:underlined;
-        font-weight:bold;
-  }
-  und {
-    color:grey;
-
-  }
-  li {
-    text-align: left;
-    }
-
-</style>
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -107,61 +66,83 @@ text-align: center;
     </nav>
 
     <!--Body-->
+    <!--Body-->
     <div id="main">
-        <h1>Cuisines</h1>
+        <h1>American Cuisine</h1>
         <hr />
+        <table class="table">
+            <tr>
+                <td>
+                    <b>Name</b>
+                </td>
+                <td>
+                    American Cuisine
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Description</b>
+                </td>
+                <td>
+                    American cuisine was created from a combination of Native American cuisine and European cuisine. Due to North America's diverse population, American cuisine has many ethnic influences.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Famous Chefs</b>
+                </td>
+                <td>
+                    <ul>
+                      <li>Charles Rahofer</li>
+                      <li>Julia Child</li>
+                      <li>Alton Brown</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Recipes</b>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="models/recipes/salad.html"> Salad </a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Common Ingredients</b>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="models/ingredients/onion.html">Onion</a></li>
+                      <li><a href="models/ingredients/carrot.html">Carrot</a></li>
+                      <li><a href="models/ingredients/celery.html">Celery</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Areas Found</b>
+                </td>
+                <td>
+                    <img src="/static/img/american.jpg style="width:400px;height:400px"">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>More Information</b>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Cuisine_of_the_United_States">Wikipedia</a>
+                </td>
+            </tr>
+
+        </table>
     </div>
 
-	<table>
-	  <tr>
-		<th>
-		<th>Cuisine Name</th>
-		<th>Seasonal Availability</th>
-		<th>Purpose</th>
-		<th>Locations of Production</th>
-		<th>Additional Properties</th>
-		<th>Ingredients Needed</th>
-		<th>Recipes</th>
-	  </tr>
-	  <tr>
-		<td> <img src="/images/american.jpg" alt="American Cuisine jpg" style="width:128px;height:128px;"></td>
-		<td><a href="american.html">American Cuisine</a></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td><a href="#"></a></td>
-		<td><a href="#"></a></td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<td> <img src="/images/french.jpg" alt="French Cuisine jpg" style="width:128px;height:128px;"></td>
-		<td><a href="french.html">French Cuisine</a></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td><a href="#"></a></td>
-		<td><a href="#"></a></td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<td> <img src="/images/mexican.jpg" alt="Mexican Cuisine jpg" style="width:128px;height:128px;"></td>
-		<td><a href="mexican.html">Mexican Cuisine</a></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td><a href="#"></a></td>
-		<td><a href="#"></a></td>
-		</td>
-	  </tr>
-	</table>
-	
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
