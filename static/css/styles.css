@@ -15,7 +15,7 @@ html > body > #main > .jumbotron > .container{
 	color: white;
 }
 
-#slideshow {
+html > body> #main > #slideshow {
 	display: block;
 	margin: auto; 
 }
