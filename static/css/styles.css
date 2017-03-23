@@ -2,6 +2,12 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.jumbrotron{
+	
+	background-image: url("../img/splash.jpg");
+	background-position: center;
+}
 /*
 table {
     font-family: arial, sans-serif;
