@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <!-- Home -->
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index	.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <!-- Ingredients dropdown -->
             <li class="dropdown">
@@ -73,38 +73,44 @@
 		  </div>
 		</div>
         <hr />
-        <p>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li>
-                    <a href="/models/ingredients/ingredients.html">Ingredients</a>
-                    <ul>
-                        <li><a href="/models/ingredients/onion.html">Onion</a></li>
-                        <li><a href="/models/ingredients/celery.html">Celery</a></li>
-                        <li><a href="/models/ingredients/carrot.html">Carrot</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/models/recipes/recipes.html">Recipes</a>
-                    <ul>
-                        <li><a href="/models/recipes/mirepoix.html">Mirepoix</a></li>
-                        <li><a href="/models/recipes/pico.html">Pico de Gallo</a></li>
-                        <li><a href="/models/recipes/salad.html">Salad</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/models/cuisines/cuisines.html">Cuisines</a>
-                    <ul>
-                        <li><a href="/models/cuisines/french.html">French</a></li>
-                        <li><a href="/models/cuisines/mexican.html">Mexican</a></li>
-                        <li><a href="/models/cuisines/american.html">American</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </p>
+        <h2>Let's face it, you're here because you love to eat.</h2> 
+		<h3>
+			On this website, we explore food in the best ways. 
+			</br>
+			You can find out how to make your favorite recipes, learn more about the ingredients in them, or the cuisines they come from. We'll educate you all on food and the best parts of it. 
+        </h3>
+		<img src="" id = "slideshow" alt="Slide Show of Food" height = "500" width = "500" />
+	
+	
+ 	<script type = "text/javascript" >
+		window.onload = rotate;
 		
-		<img src="static/img/cookbook.jpg" alt="photo of cookbook">
+		var images = new Array();
+		images[0] = "/static/img/pico.jpg";
+		images[1] = "/static/img/mirepoix.jpg";
+		images[2] = "/static/img/salad.jpg";
+		images[3] = "/static/img/ingredients.jpg";
+		images[4] = "/static/img/splash.jpg";
+		
+		
+		var index = 4;
+		
+		function rotate()
+		{
+			index++; 
+			
+			if(index == images.length) 
+			{
+				index = 0;
+			}
+			
+			document.getElementById("slideshow").src = images[index];
+			
+			
+			setTimeout(rotate, 3 * 1000);
+		}
+		
+	</script>
     </div>
 
 

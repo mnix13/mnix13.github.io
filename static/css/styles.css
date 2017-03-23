@@ -3,11 +3,23 @@ body {
     margin-right: 10%;
 }
 
-.jumbrotron{
+
+html > body > #main > .jumbotron{
 	
 	background-image: url("../img/splash.jpg");
 	background-position: center;
+	
 }
+html > body > #main > .jumbotron > .container{
+	text-align: center;
+	color: white;
+}
+
+html > body> #main > #slideshow {
+	display: block;
+	margin: auto; 
+}
+
 /*
 table {
     font-family: arial, sans-serif;
