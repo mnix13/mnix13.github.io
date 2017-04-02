@@ -1,57 +1,11 @@
+
 <!DOCTYPE>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/styles.css" />
-	
-	<style>
-h1 { 
-font-family: arial, sans-serif;
-text-shadow: 3px 2px grey;
-text-align: center;
-}
-  table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-      <col width="20">
-      <col width="80">
-  }
-
-  td, th {
-      border: 1px solid #dddddd;
-      text-align: center;
-      padding: 8px;
-  }
-
-  tr:nth-child(even) {
-      background-color: #dddddd;
-  }
-
-  tr:nth-child(odd) {
-      background-color: white;
-  }
-
-  a:link {color:green;   /* initial apperance of the link */
-        text-decoration:none;
-        font-weight:bold;
-  }
-  a:hover { 
-        color:blue;  
-        text-decoration:underlined;
-        font-weight:bold;
-  }
-  und {
-    color:grey;
-
-  }
-  li {
-    text-align: left;
-    }
-
-</style>
 </head>
-<body background="/static/img/cuisines-bg.jpg">
+<body>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -112,86 +66,83 @@ text-align: center;
     </nav>
 
     <!--Body-->
+    <!--Body-->
     <div id="main">
-        <h1>Cuisines</h1>
+        <h1>Cajun Cuisine</h1>
         <hr />
+        <table class="table">
+            <tr>
+                <td>
+                    <b>Name</b>
+                </td>
+                <td>
+                    Cajun Cuisine
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Description</b>
+                </td>
+                <td>
+                    Cajun cuisine is a style of cooking from Louisiana. It is characterized by local ingredients, such as cayenne peppers and local fish. Cajun cuisine is a mixture of traits from Southern (American) cuisine and French cuisine.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Famous Chefs</b>
+                </td>
+                <td>
+                    <ul>
+                      <li>Justin Wilson</li>
+                      <li>Donald Link</li>
+                      <li>Paul Prudhomme</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Recipes</b>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="/models/recipes/holyTrinity.html"> The Cajun Holy Trinity</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Common Ingredients</b>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="/models/ingredients/onion.html">Onion</a></li>
+                      <li><a href="/models/ingredients/celery.html">Celery</a></li>
+					  <li><a href="/models/ingredients/bellPepper.html">Bell Peppers</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Areas Found</b>
+                </td>
+                <td>
+                    <img src="/static/img/gulfcoast.jpg" style="width:400px;height:400px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>More Information</b>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Cajun_cuisine">Wikipedia</a>
+                </td>
+            </tr>
+
+        </table>
     </div>
 
-	<table>
-	  <tr>
-		<th>Cuisine Name</th>
-		<th>Description</th>
-		<th>Famous chefs</th>
-		<th>Areas Found</th>
-		<th>Recipes</th>
-		<th>Common Ingredients</th>
-	  </tr>
-	  <tr>
-		<td><a href="american.html">American Cuisine</a></td>
-		<td>American cuisine was created from a combination of Native American cuisine and European cuisine. Due to North America's diverse population, American cuisine has many ethnic influences.</td>
-		<td>
-			<ul>
-				<li> Charles Ranhofer </li>
-				<li> Julia Child </li>
-				<li> Alton Brown </li>
-			</ul>
-		</td>
-		<td><img src="/static/img/american.jpg" alt="American Region jpg" style = "width:128px;height:128px"></td>
-		<td><a href="/models/recipes/salad.html">Salad</a></td>
-		<td>
-			<ul>
-				<li><a href="/models/ingredients/onion.html">Onion</a></li>
-				<li><a href="/models/ingredients/carrot.html">Carrot</a></li>
-				<li><a href="/models/ingredients/celery.html">Celery</a></li>
-			</ul>
-		</td>
-	  </tr>
-	  <tr>
-		<td><a href="french.html">French Cuisine</a></td>
-		<td>French cuisine consists of foods found primarily in France, with some influences from surrounding regions (such as Italy).</td>
-		<td>
-			<ul>
-				<li> Guillaume Tirel </li>
-				<li> Joseph Favre</li>
-				<li> Paul Bocuse</li>
-			</ul>
-		</td>
-		<td><img src="/static/img/french.jpg" alt="French Region jpg" style="width:128px;height:128px"></td>
-		<td><a href="/models/recipes/mirepoix.html">Mirepoix</a></td>
-		<td>
-			<ul>
-				<li><a href="/models/ingredients/onion.html">Onion</a></li>
-				<li><a href="/models/ingredients/carrot.html">Carrot </a></li>
-				<li><a href="/models/ingredients/celery.html">Celery</a></li>
-			</ul>
-		</td>
-	  </tr>
-	  <tr>
-		<td><a href="mexican.html">Mexican Cuisine</a></td>
-		<td>Mexican cuisine is created largely with ingredients found in Mexico, but also has influences from Spain. Vegetables play an important role in Mexican cuisine.</td>
-		<td>
-			<ul>
-				<li>Aaron Sanchez</li>
-				<li>Jose Garces</li>
-				<li>Elena Reygadas</li>
-			</ul>
-		</td>
-		<td><img src="/static/img/mexican.jpg" alt="Mexican Region jpg" style="width:128px;height:128px"</td>
-		<td><a href="/models/recipes/pico.html">Pico de Gallo</a></td>
-		<td>
-			<ul>
-				<li><a href="/models/ingredients/onion.html">Onion</a></li>
-			</ul>
-		</td>
-	  </tr>
-	  
-	  
-	</table>
-	
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
