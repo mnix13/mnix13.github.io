@@ -1,60 +1,68 @@
 <!DOCTYPE>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/styles.css" />
 
-	<style>
-  h1 {
-  font-family: arial, sans-serif;
-  text-shadow: 3px 2px grey;
-  text-align: center;
-  }
-  table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-      <col width="20">
-      <col width="80">
-  }
+    <style>
+        h1 {
+            font-family: arial, sans-serif;
+            text-shadow: 3px 2px grey;
+            text-align: center;
+        }
 
-  td, th {
-      border: 1px solid #dddddd;
-      text-align: center;
-      padding: 8px;
-  }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            <col width="20"><col width="80">
+        }
 
-  tr:nth-child(even) {
-      background-color: #dddddd;
-  }
-  tr:nth-child(odd) {
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        tr:nth-child(odd) {
             background-color: white;
-  }
-  a:link {color:green;   /* initial apperance of the link */
-        text-decoration:none;
-        font-weight:bold;
-  }
-  a:hover {
-        color:blue;
-        text-decoration:underlined;
-        font-weight:bold;
-  }
-  und {
-    color:grey;
+        }
 
-  }
-  li {
-    text-align: left;
-    }
+        a:link {
+            color: green;
+            /* initial apperance of the link */
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-</style>
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css"/>
+        a:hover {
+            color: blue;
+            text-decoration: underlined;
+            font-weight: bold;
+        }
+
+        und {
+            color: grey;
+        }
+
+        li {
+            text-align: left;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>	
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 </head>
+
 <body background="/static/img/new-bg-recipes.jpg">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -84,6 +92,7 @@
                             <li><a href="/models/ingredients/celery.html">Celery</a></li>
                             <li><a href="/models/ingredients/carrot.html">Carrot</a></li>
                             <li><a href="/models/ingredients/bellPepper.html">Bell Peppers</a></li>
+                            <li><a href="/models/ingredients/parsley.html">Parsley</a></li>
                         </ul>
                     </li>
 
@@ -97,6 +106,7 @@
                             <li><a href="/models/recipes/pico.html">Pico de Gallo</a></li>
                             <li><a href="/models/recipes/salad.html">Salad</a></li>
                             <li><a href="/models/recipes/holyTrinity.html">Holy Trinity</a></li>
+                            <li><a href="/models/recipes/chimichurri.html">Chimichurri</a></li>
                         </ul>
                     </li>
 
@@ -110,6 +120,7 @@
                             <li><a href="/models/cuisines/mexican.html">Mexican</a></li>
                             <li><a href="/models/cuisines/american.html">American</a></li>
                             <li><a href="/models/cuisines/cajun.html">Cajun</a></li>
+                            <li><a href="/models/cuisines/argentinian.html">Argentinian</a></li>
                         </ul>
                     </li>
 
@@ -124,90 +135,113 @@
     <div id="main">
         <h1>Recipes</h1>
         <hr />
-        <table id = "recipes">
-			<thead>	
-			  <tr>
-				<th>Appearance</th>
-				<th>Recipe Name</th>
-				<th>Description</th>
-				<th>Calories</th>
-				<th>Cuisine</th>
-				<th>Common Ingredients</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr>
-				<td> <img src="/static/img/mirepoix.jpg" alt="Mirepoix jpg" style="width:128px;height:128px;"></td>
-				<td><a href="mirepoix.html">Mirepoix</a></td>
-				<td>A mirepoix is diced vegetable cooked for a long time on a gentle heat without colour or browning, usually with butter or other fat or oil.</td>
-				<td>35 calories per 100 grams</td>
-				<td><a href="/models/cuisines/french.html">French</a></td>
-				<td>
-					<ul>
-						<li>Butter or oil</li>
-						<li><a href="/models/ingredients/onion.html">Onion</a></li>
-						<li><a href="/models/ingredients/carrot.html">Carrot</a></li>
-						<li><a href="/models/ingredients/celery.html">Celery</a></li>
-					</ul>
-				</td>
-			  </tr>
-			  <tr>
-				<td> <img src="/static/img/pico.jpg" alt="pico jpg" style="width:128px;height:128px;"></td>
-				<td><a href="pico.html">Pico de Gallo</a></td>
-				<td>Pico de gallo is used in much the same way as other Mexican liquid salsas, but since it contains less liquid, it can also be used as a main ingredient in dishes such as tacos and fajitas.</td>
-				<td>31 calories per 100 grams</td>
-				<td><a href="/models/cuisines/mexican.html">Mexican</a></td>
-				<td>
-					<ul>
-						<li>Cilantro</li>
-						<li>Tomato</li>
-						<li><a href="/models/ingredients/onion.html">Onion</a></li>
-						<li>Jalapeno</li>
-						<li>Lime Juice</li>
-					</ul>
-				</td>
-			  </tr>		  
-			  <tr>
-				<td> <img src="/static/img/salad.jpg" alt="Salad jpg" style="width:128px;height:128px;"></td>
-				<td><a href="salad.html">Salad</a></td>
-				<td>A salad is a dish consisting of a mixture of small pieces of food, which may be mixed with a sauce or salad dressing.</td>
-				<td>50 calories per 100 grams</td>
-				<td><a href="/models/cuisines/american.html">American</a></td>
-				<td>
-					<ul>
-						<li>Lettuce</li>
-						<li>Tomato</li>
-						<li><a href="/models/ingredients/onion.html">Onion</a></li>
-						<li><a href="/models/ingredients/carrot.html">Carrot</a></li>
-						<li><a href="/models/ingredients/celery.html">Celery</a></li>
-					</ul>
-				</td>
-			  </tr>
-        <tr>
-        <td> <img src="/static/img/holyTrinity.jpg" alt="holy trinity image" style="width:128px;height:128px;"></td>
-        <td><a href="holyTrinity.html">Holy Trinity</a></td>
-        <td>The Holy Trintiy is a base of Cajun/Creole cooking, inspired by Mirepoix from the French Cuisine. It is composed of a blend of celery, green bell pepper, and onion with a 1:1:2 ratio. It has a pungent and savory flavor. The Holy Trinity is used as a base in almost all Cajun/Creole dishes.</td>
-        <td>716 kcal per serving.</td>
-        <td><a href="/models/cuisines/cajun.html">Cajun</a></td>
-        <td>
-          <ul>
-            <li>Butter or Oil</li>
-            <li><a href="/models/ingredients/celery.html">Celery</a></li>
-            <li><a href="/models/ingredients/onion.html">Onion</a></li>
-            <li><a href="/models/ingredients/bellPepper.html">Bell Peppers</a></li>
-          </ul>
-        </td>
-        </tr>     
-		  </tbody>
-    	</table>
+        <table id="recipes">
+            <thead>
+                <tr>
+                    <th>Appearance</th>
+                    <th>Recipe Name</th>
+                    <th>Description</th>
+                    <th>Calories</th>
+                    <th>Cuisine</th>
+                    <th>Common Ingredients</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <img src="/static/img/mirepoix.jpg" alt="Mirepoix jpg" style="width:128px;height:128px;"></td>
+                    <td><a href="mirepoix.html">Mirepoix</a></td>
+                    <td>A mirepoix is diced vegetable cooked for a long time on a gentle heat without colour or browning, usually with butter or other fat or oil.</td>
+                    <td>35 calories per 100 grams</td>
+                    <td><a href="/models/cuisines/french.html">French</a></td>
+                    <td>
+                        <ul>
+                            <li>Butter or oil</li>
+                            <li><a href="/models/ingredients/onion.html">Onion</a></li>
+                            <li><a href="/models/ingredients/carrot.html">Carrot</a></li>
+                            <li><a href="/models/ingredients/celery.html">Celery</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="/static/img/pico.jpg" alt="pico jpg" style="width:128px;height:128px;"></td>
+                    <td><a href="pico.html">Pico de Gallo</a></td>
+                    <td>Pico de gallo is used in much the same way as other Mexican liquid salsas, but since it contains less liquid, it can also be used as a main ingredient in dishes such as tacos and fajitas.</td>
+                    <td>31 calories per 100 grams</td>
+                    <td><a href="/models/cuisines/mexican.html">Mexican</a></td>
+                    <td>
+                        <ul>
+                            <li>Cilantro</li>
+                            <li>Tomato</li>
+                            <li><a href="/models/ingredients/onion.html">Onion</a></li>
+                            <li>Jalapeno</li>
+                            <li>Lime Juice</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="/static/img/salad.jpg" alt="Salad jpg" style="width:128px;height:128px;"></td>
+                    <td><a href="salad.html">Salad</a></td>
+                    <td>A salad is a dish consisting of a mixture of small pieces of food, which may be mixed with a sauce or salad dressing.</td>
+                    <td>50 calories per 100 grams</td>
+                    <td><a href="/models/cuisines/american.html">American</a></td>
+                    <td>
+                        <ul>
+                            <li>Lettuce</li>
+                            <li>Tomato</li>
+                            <li><a href="/models/ingredients/onion.html">Onion</a></li>
+                            <li><a href="/models/ingredients/carrot.html">Carrot</a></li>
+                            <li><a href="/models/ingredients/celery.html">Celery</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="/static/img/holyTrinity.jpg" alt="holy trinity image" style="width:128px;height:128px;"></td>
+                    <td><a href="holyTrinity.html">Holy Trinity</a></td>
+                    <td>The Holy Trintiy is a base of Cajun/Creole cooking, inspired by Mirepoix from the French Cuisine. It is composed of a blend of celery, green bell pepper, and onion with a 1:1:2 ratio. It has a pungent and savory flavor. The Holy Trinity
+                        is used as a base in almost all Cajun/Creole dishes.</td>
+                    <td>716 kcal per serving.</td>
+                    <td><a href="/models/cuisines/cajun.html">Cajun</a></td>
+                    <td>
+                        <ul>
+                            <li>Butter or Oil</li>
+                            <li><a href="/models/ingredients/celery.html">Celery</a></li>
+                            <li><a href="/models/ingredients/onion.html">Onion</a></li>
+                            <li><a href="/models/ingredients/bellPepper.html">Bell Peppers</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="/static/img/chimichurri.jpg" alt="chimichurri" style="width:128px;height:128px;"></td>
+                    <td><a href="chimichurri.html">Chimichurri</a></td>
+                    <td>Chimichurri is a traditional pesto-style condiment used in many Argentinian foods.</td>
+                    <td>716 kcal per serving.</td>
+                    <td><a href="/models/cuisines/argentinian.html">Argentinian</a></td>
+                    <td>
+                        <ul>
+                            <li><a href="/models/ingredients/onion.html">Onion</a></li>
+                            <li><a href="/models/ingredients/parsley.html">Garlic</a></li>
+                            <li>Parsley</li>
+                            <li>Cilantro</li>
+                            <li>Lime juice</li>
+                            <li>Olive oil</li>
+                            <li>Cumin and Coriander</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-	<script>
-	$(document).ready( function () {
-		$('#recipes').DataTable({
-			"lengthMenu": [[3, -1], [3, "All"]]
-			});
-		});
-	</script>
-	
+    <script>
+        $(document).ready(function() {
+            $('#recipes').DataTable({
+                "lengthMenu": [
+                    [3, -1],
+                    [3, "All"]
+                ]
+            });
+        });
+    </script>
+
 </body>
+
 </html>
