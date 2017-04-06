@@ -1,0 +1,115 @@
+{
+  "type": "object",
+  "properties": {
+    "Project #4": {
+      "type": "object",
+      "properties": {
+        "Git SHA": {
+          "type": "string"
+        },
+        "GitHub Username": {
+          "type": "string"
+        },
+        "GitHub URL": {
+          "type": "string"
+        },
+        "Website URL": {
+          "type": "string"
+        },
+        "Leader EID": {
+          "type": "string"
+        },
+		"Leader First Name": {
+          "type": "string"
+        },
+		"Leader Last Name": {
+          "type": "string"
+        },
+        "Leader E-mail": {
+          "type": "string"
+        },
+        "Leader Estimated Completion Time": {
+          "type": "integer"
+        },
+        "Leader Actual   Completion Time": {
+          "type": "integer"
+        },
+        "Member #2 EID": {
+          "type": "string"
+        },
+		"Member #2 First Name": {
+          "type": "string"
+        },
+		"Member #2 Last Name": {
+          "type": "string"
+        },
+        "Member #2 E-mail": {
+          "type": "string"
+        },
+        "Member #2 Estimated Completion Time": {
+          "type": "integer"
+        },
+        "Member #2 Actual   Completion Time": {
+          "type": "integer"
+        },
+        "Member #3 EID": {
+          "type": "string"
+        },
+		"Member #3 First Name": {
+          "type": "string"
+        },
+		"Member #3 Last Name": {
+          "type": "string"
+        },
+        "Member #3 E-mail": {
+          "type": "string"
+        },
+        "Member #3 Estimated Completion Time": {
+          "type": "integer"
+        },
+        "Member #3 Actual   Completion Time": {
+          "type": "integer"
+        },
+        "Member #4 EID": {
+          "type": "string"
+        },
+		"Member #4 First Name": {
+          "type": "string"
+        },
+		"Member #4 Last Name": {
+          "type": "string"
+        },
+        "Member #4 E-mail": {
+          "type": "string"
+        },
+        "Member #4 Estimated Completion Time": {
+          "type": "integer"
+        },
+        "Member #4 Actual   Completion Time": {
+          "type": "integer"
+        },
+        "Member #5 EID": {
+          "type": "string"
+        },
+		"Member #5 First Name": {
+          "type": "string"
+        },
+		"Member #5 Last Name": {
+          "type": "string"
+        },
+        "Member #5 E-mail": {
+          "type": "string"
+        },
+        "Member #5 Estimated Completion Time": {
+          "type": "integer"
+        },
+        "Member #5 Actual   Completion Time": {
+          "type": "integer"
+        },
+        "Comments": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
