@@ -1,16 +1,21 @@
-{% extends 'base.html' %} {% block header %}
+{% extends 'base.html' %}
+
+{% block header %}
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" />
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
-{% endblock %} {% block main %}
+{% endblock %}
 
+{% block main %}
 <table id="table">
     <h1>{{ model }}</h1>
     <thead>
         <tr>
-            {% for item in instances[0] %} {% if item != 'appearance' and item != 'image' and item != 'video' %}
-            <td>{{ item.title() }}</td>
-            {% endif %} {% endfor %}
+            {% for item in instances[0] %}
+                {% if item != 'appearance' and item != 'image' and item != 'video' %}
+                    <td>{{ item.title() }}</td>
+                {% endif %}
+            {% endfor %}
         </tr>
     </thead>
     <tbody>

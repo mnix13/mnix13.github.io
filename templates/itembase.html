@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% block main %}
+{% extends 'base.html' %}
+
+{% block main %}
 <h1>{{ item.name }}</h1>
 <hr />
 <table class="table">
@@ -8,22 +10,22 @@
         {% if i == 'appearance' or i == 'image' %}
         <td><img src="{{ item[i] }}" width=500></td>
         {% elif i == 'video' %}
-        <td>
-            <iframe width="560" height="315" src="{{item[i]}}" frameborder="0" allowfullscreen></iframe>
+        <td><iframe width="560" height="315" src="{{item[i]}}" frameborder="0" allowfullscreen></iframe></td>
+        {% elif i == 'wikipedia' or i == 'link' %}
+        <td><a href="{{ item[i] }}">Wikipedia</a></td>
+        {% else %}
+            {% if item[i] is iterable and item[i] is not string %}
             <td>
-                {% elif i == 'wikipedia' or i == 'link' %}
-                <td><a href="{{ item[i] }}">Wikipedia</a></td>
-                {% else %} {% if item[i] is iterable and item[i] is not string %}
-                <td>
-                    <ul>
-                        {% for thing in item[i] %}
-                        <li>{{thing}}</li>
-                        {% endfor %}
-                    </ul>
-                </td>
-                {% else %}
-                <td>{{ item[i] }}</td>
-                {% endif %} {% endif %}
+                <ul>
+                    {% for thing in item[i] %}
+                    <li>{{thing}}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            {% else %}
+            <td>{{ item[i] }}</td>
+            {% endif %}
+        {% endif %}
     </tr>
     {% endfor %}
 </table>
