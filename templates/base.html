@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+
+    <title>{% block title %}Food Is Life{% endblock %}</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" /> {% block header %} {% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="{{ url_for('index') }}">Food Is Life</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- Home -->
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <!-- Ingredients dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ingredients<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('modelpage', model='ingredients') }}">Ingredients</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="{{ url_for('itempage', model='ingredients', item='bell pepper') }}">Bell Peppers</a></li>
+                            <li><a href="{{ url_for('itempage', model='ingredients', item='carrot') }}">Carrot</a></li>
+                            <li><a href="{{ url_for('itempage', model='ingredients', item='celery') }}">Celery</a></li>
+                            <li><a href="{{ url_for('itempage', model='ingredients', item='chicken') }}">Chicken</a></li>
+                            <li><a href="{{ url_for('itempage', model='ingredients', item='onion') }}">Onion</a></li>
+                            <li><a href="{{ url_for('itempage', model='ingredients', item='parsley') }}">Parsley</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Recipes dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('modelpage', model='recipes') }}">Recipes</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="{{ url_for('itempage', model='recipes', item='chicken alfredo') }}">Chicken Alfredo</a></li>
+                            <li><a href="{{ url_for('itempage', model='recipes', item='chimichurri') }}">Chimichurri</a></li>
+                            <li><a href="{{ url_for('itempage', model='recipes', item='holy trinity') }}">Holy Trinity</a></li>
+                            <li><a href="{{ url_for('itempage', model='recipes', item='mirepoix') }}">Mirepoix</a></li>
+                            <li><a href="{{ url_for('itempage', model='recipes', item='pico de gallo') }}">Pico de Gallo</a></li>
+                            <li><a href="{{ url_for('itempage', model='recipes', item='salad') }}">Salad</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Cuisine dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuisines<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('modelpage', model='cuisines') }}">Cuisines</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="{{ url_for('itempage', model='cuisines', item='american') }}">American</a></li>
+                            <li><a href="{{ url_for('itempage', model='cuisines', item='argentinian') }}">Argentinian</a></li>
+                            <li><a href="{{ url_for('itempage', model='cuisines', item='cajun') }}">Cajun</a></li>
+                            <li><a href="{{ url_for('itempage', model='cuisines', item='french') }}">French</a></li>
+                            <li><a href="{{ url_for('itempage', model='cuisines', item='italian') }}">Italian</a></li>
+                            <li><a href="{{ url_for('itempage', model='cuisines', item='mexican') }}">Mexican</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--Body-->
+    <div id="main">
+        {% block main %}
+        <h1>Base</h1>
+        <hr /> {% endblock %}
+    </div>
+
+</body>
+
+</html>
