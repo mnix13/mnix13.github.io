@@ -30,7 +30,8 @@ def modelpage(model):
 @app.route("/<model>/<item>")
 def itempage(model, item):
     try:
-        itemdata = {"item": [i for i in data[model.title()]['instances'] if i['name'] == item.title()][0]}
+        itemdata = {"item": [i for i in data[model.title()]['instances'] if i['name'].title() == item.title()][0]}
+        itemdata['model'] = model
         return render_template("itembase.html", **itemdata)
     except:
         abort(404)
