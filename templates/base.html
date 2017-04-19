@@ -13,7 +13,13 @@
         crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" /> {% block header %} {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" /> 
+	
+	{% block header %} 
+	<style>
+		body {background: #d7e2f4}
+	</style>
+	{% endblock %}
 </head>
 
 <body>
