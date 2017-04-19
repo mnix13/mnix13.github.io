@@ -1,6 +1,6 @@
 {
   "Project #4": {
-    "Git SHA": "",
+    "Git SHA": "0e1d3a368f98dd444642a461b9e9b364b64b2ab8",
     "GitHub Username": "mnix13",
     "GitHub URL": "https://github.com/mnix13/mnix13.github.io",
     "Website URL": "http://cs329e-food.me",
@@ -10,6 +10,7 @@
     "Leader E-mail": "mnix@utexas.edu",
     "Leader Estimated Completion Time (hours : integer)": 5,
     "Leader Actual    Completion Time (hours : integer)": 4,
+    "Member #2 EID": "ak33359",
     "Member #2 First Name": "Arti",
 	"Member #2 Last Name": "Kumar",
 	"Member #2 E-mail": "artikumar@utexas.edu",
