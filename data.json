@@ -1,0 +1,426 @@
+{
+    "models": [
+        {
+            "model": "Ingredients",
+            "instances":[
+                {
+                    "name": "Bell Pepper",
+                    "seasonality": "Year Round",
+                    "purpose": "Depending on how ripe the bell pepper is, the flavor can range from slightly bitter and earthy to sweet.",
+                    "producers": [
+                        "Grown globally"
+                    ],
+                    "properties": [
+                        "Rich source of antioxidants",
+                        "Great for maintaining eye health"
+                    ],
+                    "wikipedia": "https://en.wikipedia.org/wiki/Bell_pepper",
+                    "recipes": [
+                        "Holy Trinity"
+                    ],
+                    "cuisines": [
+                        "Mexican",
+                        "American",
+                        "Cajun"
+                    ],
+                    "appearance": "http://divineflavor.com/wp-content/uploads/2014/05/Green-Bell-Pepper.png"
+                },
+                {
+                    "name": "Carrot",
+                    "seasonality": "Year Round",
+                    "purpose": "Carrots can add texture and a slight sweetness to any dish. When cooked well, carrots can become even sweeter.",
+                    "producers": [
+                        "Russia",
+                        "Japan",
+                        "The United States",
+                        "France",
+                        "The United Kingdom"
+                    ],
+                    "properties": [
+                        "Reduces risk of cancer",
+                        "Reduces risk of Heart disease and stroke",
+                        "Improves vision and dental health",
+                        "Nourishes skin"
+                    ],
+                    "wikipedia": "https://en.wikipedia.org/wiki/Carrot",
+                    "recipes": [
+                        "Mirepoix",
+                        "Salad"
+                    ],
+                    "cuisines": [
+                        "French",
+                        "American"
+                    ],
+                    "appearance": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg/440px-13-08-31-wien-redaktionstreffen-EuT-by-Bi-frie-037.jpg"
+                },
+                {
+                    "name": "Celery",
+                    "seasonality": "Year Round",
+                    "purpose": "Celery adds a bit of texture and a sense of freshness to every dish without the additional fat or calories.",
+                    "producers": [
+                        "North America",
+                        "Europe",
+                        "Asia"
+                    ],
+                    "properties": [
+                        "Lowers high cholesterol",
+                        "Lowers inflammation",
+                        "Prevents and treats high blood pressure",
+                        "Prevents ulcers",
+                        "Protects liver health"
+                    ],
+                    "wikipedia": "https://en.wikipedia.org/wiki/Celery",
+                    "recipes": [
+                        "Mirepoix",
+                        "Salad",
+                        "Holy Trinity"
+                    ],
+                    "cuisines": [
+                        "French",
+                        "American",
+                        "Cajun"
+                    ],
+                    "appearance": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/C%C3%A9leri.jpg/440px-C%C3%A9leri.jpg"
+                },
+                {
+                    "name": "Chicken",
+                    "seasonality": "Year Round",
+                    "purpose": "Chicken is used to add a meat component to almost any main dish.",
+                    "producers": [
+                        "Grown globally"
+                    ],
+                    "properties": [
+                        "Improves immunity",
+                        "Assists in the regulation of blood sugar",
+                        "Reduces inflammation and heals infections"
+                    ],
+                    "wikipedia": "https://en.wikipedia.org/wiki/Yellow_onion",
+                    "recipes": [
+                        "Mirepoix",
+                        "Pico de Gallo",
+                        "Salad",
+                        "Holy Trinity"
+                    ],
+                    "cuisines": [
+                        "Argentinian",
+                        "Mexican",
+                        "American",
+                        "Cajun"
+                    ],
+                    "appearance": "https://upload.wikimedia.org/wikipedia/commons/8/80/Rosemary_chicken.jpg"
+                    
+                },
+                {
+                    "name": "Onion",
+                    "seasonality": "March - May",
+                    "purpose": "Depending on how it is cooked onions can provide a sharp flavorful kick ranging from sweet to pungent.",
+                    "producers": [
+                        "Grown globally"
+                    ],
+                    "properties": [
+                        "Good source of protein",
+                        "Contains many health benefits",
+                        "Main parts to eat: Breast, Leg, and Wing"
+                    ],
+                    "wikipedia": "https://en.wikipedia.org/wiki/Chicken_as_food",
+                    "recipes": [
+                        "Chicken Alfredo",
+                        "Salad"
+                    ],
+                    "cuisines": [
+                        "American",
+                        "Cajun",
+                        "Italian"
+                    ],
+                    "appearance": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/440px-Onion_on_White.JPG"
+                },
+                {
+                    "name": "Parsley",
+                    "seasonality": "Spring - Summer",
+                    "purpose": "Parsley is widely used in Middle Eastern, European, Brazilian and American cooking. Curly leaf parsley is used often as a garnish. Green parsley is used frequently as a garnish on potato dishes (boiled or mashed potatoes), on rice dishes (risotto or pilaf), on fish, fried chicken, lamb, goose, and steaks, as well in meat or vegetable stews (including shrimp creole, beef bourguignon, goulash, or chicken paprikash).",
+                    "producers": [
+                        "Italy", 
+                        "Greece",
+                        "Portugal",
+                        "Spain", 
+                        "Malta", 
+                        "Morocco", 
+                        "Algeria", 
+                        "Tunisia"
+                    ],
+                    "properties": [
+                        "Garnish"
+                    ],
+                    "wikipedia": "https://en.wikipedia.org/wiki/Parsley",
+                    "recipes": [
+                        "Pico de Gallo",
+                        "Chimichurri",
+                        "Chicken Alfredo"
+                    ],
+                    "cuisines": [
+                        "Mexican",
+                        "Argentinian",
+                        "Italian"
+                    ],
+                    "appearance": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Petroselinum.jpg/440px-Petroselinum.jpg"
+                }
+            ]
+        },
+        {
+            "model": "Recipes",
+            "instances":[
+                {
+                    "name": "Chicken Alfredo",
+                    "course": "Main Entree",
+                    "description": "Chicken Alfredo is a popular pasta dish within the Italian Cuisines. It can be served with or without chicken, however including a meat portion is often encouraged.",
+                    "ingredients":[
+                        "Chicken",
+                        "Parsley",
+                        "Fettuccine Noodles",
+                        "Alfredo Sauce"
+                    ],
+                    "recipe":[
+                        "Grill Chicken",
+                        "Bring a pot of water to a boil, then add fettuccine noodles and cook until softened",
+                        "Drain water from noodles.",
+                        "Combine cheese, Alfredo sauce, and noodles together",
+                        "Serve with chicken on top of noodles or mixed throughout",
+                        "Sprinkle parsley over dish before serving"
+                    ],
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Fettuccine_Alfredo.jpg",
+                    "video": "https://www.youtube.com/embed/am2rybFCM18"
+                },
+                {
+                    "name": "Chimichurri",
+                    "course": "Condiment",
+                    "description": "Chimichurri is a condiment used in a similar fashion as other pestos on most Argentinian meat dishes, such as steak tacos.",
+                    "ingredients":[
+                        "Onion",
+                        "Parsley",
+                        "Garlic",
+                        "Cilantro",
+                        "Lime juice",
+                        "Olive oil",
+                        "Cumin and Coriander"
+                    ],
+                    "recipe":[
+                        "Place all ingredients in food processor",
+                        "Serve as condiment"
+                    ],
+                    "image": "/static/img/chimichurri.jpg",
+                    "video": "https://www.youtube.com/embed/EewdtUI03_s"
+                },
+                {
+                    "name": "Holy Trinity",
+                    "course": "Intermediary dish",
+                    "description": "The Holy Trinity is a base of Cajun/Creole cooking, inspired by Mirepoix from the French Cuisine. It is composed of a blend of celery, green bell pepper, and onion with a 1:1:2 ratio. It has a pungent and savoury flavour. The Holy Trinity is used as a base in almost all Cajun/Creole dishes.",
+                    "ingredients":[
+                        "Butter or oil",
+                        "Onion",
+                        "Celery",
+                        "Green Bell Pepper"
+                    ],
+                    "recipe":[
+                        "Chop up your ingredients based into chunks, based on your cook time. For shorter cooking times, use smaller pieces.",
+                        "Heat your pan to a medium-high heat",
+                        "Add your butter or oil and give it time to heat up",
+                        "Add your ingredients and let them saute.",
+                        "Transfer them out the pan, and add them to the dish you're cooking."
+                    ],
+                    "image": "/static/img/holy-trinity.jpg",
+                    "video": "https://www.youtube.com/embed/3Frr9Q_xdUQ"
+                },
+                {
+                    "name": "Mirepoix",
+                    "course": "Intermediary dish",
+                    "description": "Mirepoix is a classic base for French cuisine . It is composed of a blend of celery, carrot, and onion with a 1:1:2 ratio. It is a sweet base, usually addded to stocks/soups/sauces to enhance the flavor (in comparison to plain water). Mirepoix is a great way to add a flare to your favorite dish.",
+                    "ingredients":[
+                        "Butter or oil",
+                        "Onion",
+                        "Celery",
+                        "Carrot"
+                    ],
+                    "recipe":[
+                        "Chop up your ingredients based into chunks, based on your cook time. For shorter cooking times, use smaller pieces.",
+                        "Heat your pan to a medium heat",
+                        "Add your butter or oil and give it time to heat up",
+                        "Add your ingredients and let them saute.",
+                        "Transfer them out the pan, and add them to whatever you'd like (a pot to make a stock, or etc.)."
+                    ],
+                    "image": "/static/img/mirepoix.jpg",
+                    "video": "https://www.youtube.com/embed/zVr3z4HfpeI"
+                },
+                {
+                    "name": "Pico De Gallo",
+                    "course": "Appetizer",
+                    "description": "Pico de gallo is used in much the same way as other Mexican cuisine liquid salsas, but since it contains less liquid, it can also be used as a main ingredient in dishes such as tacos and fajitas.",
+                    "ingredients":[
+                        "Cilantro",
+                        "Tomato",
+                        "Onion",
+                        "Jalapeno",
+                        "Lime juice",
+                        "Bell Pepper"
+                    ],
+                    "recipe":[
+                        "Remove cilantro from stem and add to large bowl",
+                        "Dice your tomato, onion, and jalapeno into approximately 1cm x 1cm chunks",
+                        "Add diced tomato, onion, and jalapeno to bowl and stir thoroughly",
+                        "Squeeze lime juice over mixture to taste",
+                        "Serve with chips!"
+                    ],
+                    "image": "/static/img/pico.jpg",
+                    "video": "https://www.youtube.com/embed/aAuZn2qNAAQ"
+                },
+                {
+                    "name": "Salad",
+                    "course": "Appetizer",
+                    "description": "A salad is a dish consisting of a mixture of small pieces of food, which may be mixed with a sauce or salad dressing. This is a common dish in American cuisine",
+                    "ingredients":[
+                        "Lettuce",
+                        "Tomato",
+                        "Onion",
+                        "Celery",
+                        "Carrot",
+                        "Dressing",
+                        "Bell Pepper",
+                        "Chicken"
+                    ],
+                    "recipe":[
+                        "Clean all ingredients thoroughly",
+                        "Chop all vegetables into chunks of your preferred size (1 inch x 1 inch recommended)",
+                        "Place in bowl and serve"
+                    ],
+                    "image": "/static/img/salad.jpg",
+                    "video": "https://www.youtube.com/embed/fGheC0sg38Y"
+                }
+            ]
+        },
+        {
+            "model": "Cuisines",
+            "instances":[
+                {
+                    "name": "American",
+                    "description": "American cuisine was created from a combination of Native American cuisine and European cuisine. Due to North America's diverse population, American cuisine has many ethnic influences.",
+                    "chefs": [
+                        "Charles Rahofer",
+                        "Julia Child",
+                        "Alton Brown"
+                    ],
+                    "recipes": [
+                        "Salad"
+                    ],
+                    "ingredients": [
+                        "Onion",
+                        "Carrot",
+                        "Celery",
+                        "Bell Pepper",
+                        "Chicken"
+                    ],
+                    "image": "/static/img/american.jpg",
+                    "link": "https://en.wikipedia.org/wiki/Cuisine_of_the_United_States"
+                },
+                {
+                    "name": "Argentinian",
+                    "description": "Argentine cuisine is described as a cultural blending of Mediterranean influences (such as those created by Italian and Spanish populations) with and very small inflows (mainly in border areas) Indigenous, within the wide scope of agricultural products that are abundant in the country.",
+                    "chefs": [
+                        "Fernando Rivarola",
+                        "Leandro Cristóbal",
+                        "Francis Mallmann"
+                    ],
+                    "recipes": [
+                        "Chimichurri"
+                    ],
+                    "ingredients": [
+                        "Onion",
+                        "Parsley",
+                        "Garlic",
+                        "Cilantro",
+                        "Lime juice",
+                        "Cumin and Coriander"
+                    ],
+                    "image": "/static/img/argentina.jpg",
+                    "link": "https://en.wikipedia.org/wiki/Argentine_cuisine"
+                },
+                {
+                    "name": "Cajun",
+                    "description": "Cajun cuisine is a style of cooking from Louisiana. It is characterized by local ingredients, such as cayenne peppers and local fish. Cajun cuisine is a mixture of traits from Southern (American) cuisine and French cuisine.",
+                    "chefs": [
+                        "Justin Wilson",
+                        "Donald Link",
+                        "Paul Prudhomme"
+                    ],
+                    "recipes": [
+                        "Holy Trinity"
+                    ],
+                    "ingredients": [
+                        "Onion",
+                        "Celery",
+                        "Bell Pepper",
+                        "Chicken"
+                    ],
+                    "image": "/static/img/gulfcoast.jpg",
+                    "link": "https://en.wikipedia.org/wiki/Cajun_cuisine"
+                },
+                {
+                    "name": "French",
+                    "description": "French cuisine consists of foods found primarily in France, with some influences from surrounding regions (such as Italy).",
+                    "chefs": [
+                        "Guillaume Tirel",
+                        "Joseph Favre",
+                        "Paul Bocuse"
+                    ],
+                    "recipes": [
+                        "Mirepoix"
+                    ],
+                    "ingredients": [
+                        "Onion",
+                        "Carrot",
+                        "Celery"
+                    ],
+                    "image": "/static/img/french.jpg",
+                    "link": "https://en.wikipedia.org/wiki/French_cuisine"
+                },
+                {
+                    "name": "Italian",
+                    "description": "Italian cuisine, originating from Italy, is famous for it's pizzas, pastas, and cheeses.",
+                    "chefs": [
+                        "Massimo Bottura",
+                        "Antonio Carluccio",
+                        "Giorgio Locatelli"
+                    ],
+                    "recipes": [
+                        "Chicken Alfredo"
+                    ],
+                    "ingredients": [
+                        "Chicken",
+                        "Parsley",
+                        "Various Sauces",
+                        "Various Pasta Noodles"
+                    ],
+                    "image": "/static/img/italian.svg.png",
+                    "link": "https://en.wikipedia.org/wiki/Italian_cuisine"
+                },
+                {
+                    "name": "Mexican",
+                    "description": "Mexican cuisine is created largely with ingredients found in Mexico, but also has influences from Spain. Vegetables play an important role in Mexican cuisine.",
+                    "chefs": [
+                        "Aaron Sanchez",
+                        "Jose Garces",
+                        "Elena Reygades"
+                    ],
+                    "recipes": [
+                        "Pico de Gallo"
+                    ],
+                    "ingredients": [
+                        "Onion",
+                        "Bell Pepper",
+                        "Tortilla"
+                    ],
+                    "image": "/static/img/mexican.jpg",
+                    "link": "https://en.wikipedia.org/wiki/Mexican_cuisine"
+                }
+            ]
+        }
+    ]
+}

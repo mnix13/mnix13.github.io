@@ -10,7 +10,6 @@ html > body > #main > .jumbotron{
 	background-position: center;
 	
 }
-html > body > #main > .jumbotron > .container{
 	text-align: center;
 	color: white;
 }
@@ -20,7 +19,6 @@ html > body> #main > #slideshow {
 	margin: auto; 
 }
 
-/*
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -32,8 +30,3 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-*/
