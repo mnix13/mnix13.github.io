@@ -18,7 +18,11 @@
             <td>
                 <ul>
                     {% for thing in item[i] %}
-                    <li>{{thing}}</li>
+                        {% if thing in links %}
+                            <li><a href="{{ url_for('itempage', item=thing, model=links[thing]) }}">{{thing}}</a></li>
+                        {% else %}
+                            <li>{{thing}}</li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </td>

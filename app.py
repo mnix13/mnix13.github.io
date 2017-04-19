@@ -4,8 +4,17 @@ from pprint import pprint
 import json
 
 # Setup
+# Instantiate app
 app = Flask(__name__, static_url_path='/static')
+
+# Load data into data
 data = dict((item['model'], item) for item in json.load(open('data.json'))['models'])
+
+# Load possible links
+links = {}
+for model in json.load(open('data.json'))['models']:
+  for item in model['instances']:
+    links[item['name']] = model['model']
 
 # Serve static files
 @app.route('/static/<path:path>')
@@ -28,6 +37,7 @@ def about():
 def modelpage(model):
     try:
         pagedata = data[model.title()]
+        pagedata['links'] = links
         return render_template("modelbase.html", **pagedata)
     except:
         abort(404)
@@ -38,6 +48,7 @@ def itempage(model, item):
     try:
         itemdata = {"item": [i for i in data[model.title()]['instances'] if i['name'].title() == item.title()][0]}
         itemdata['model'] = model
+        itemdata['links'] = links
         return render_template("itembase.html", **itemdata)
     except:
         abort(404)
