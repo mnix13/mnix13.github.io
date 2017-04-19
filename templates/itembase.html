@@ -7,29 +7,41 @@
     {% for i in item %}
     <tr>
         <td><b>{{ i.title() }}</b></td>
+
+        <td>
+        {% if item[i] is string and item[i] in links %}
+            <a href="{{ url_for('itempage', item=item[i], model=links[item[i]]) }}">
+        {% endif %}
+
         {% if i == 'appearance' or i == 'image' %}
-        <td><img src="{{ item[i] }}" width=500></td>
+        <img src="{{ item[i] }}" width=500>
         {% elif i == 'video' %}
-        <td><iframe width="560" height="315" src="{{item[i]}}" frameborder="0" allowfullscreen></iframe></td>
+        <iframe width="560" height="315" src="{{item[i]}}" frameborder="0" allowfullscreen></iframe>
         {% elif i == 'wikipedia' or i == 'link' %}
-        <td><a href="{{ item[i] }}">Wikipedia</a></td>
+        <a href="{{ item[i] }}">Wikipedia</a>
         {% else %}
             {% if item[i] is iterable and item[i] is not string %}
-            <td>
                 <ul>
                     {% for thing in item[i] %}
                         {% if thing in links %}
-                            <li><a href="{{ url_for('itempage', item=thing, model=links[thing]) }}">{{thing}}</a></li>
-                        {% else %}
-                            <li>{{thing}}</li>
+                            <a href="{{ url_for('itempage', item=item[i], model=links[item[i]]) }}">
+                        {% endif %}
+                        <li>{{thing}}</li>
+                        {% if thing in links %}
+                            </a>
                         {% endif %}
                     {% endfor %}
                 </ul>
-            </td>
             {% else %}
-            <td>{{ item[i] }}</td>
+                {{ item[i] }}
             {% endif %}
         {% endif %}
+        
+        {% if item[i] is string and item[i] in links %}
+            </a>
+        {% endif %}
+
+        </td>
     </tr>
     {% endfor %}
 </table>
