@@ -1,11 +1,17 @@
 # Imports
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, send_from_directory
 from pprint import pprint
 import json
 
 # Setup
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 data = dict((item['model'], item) for item in json.load(open('data.json'))['models'])
+
+# Serve static files
+@app.route('/static/<path:path>')
+def staticpath(path):
+    print(path)
+    return send_from_directory('static', path)
 
 # Index route
 @app.route('/')
