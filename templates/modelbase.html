@@ -22,23 +22,39 @@
         {% for instance in instances %}
         <tr>
             {% for item in instance %}
-                {% if instance[item] is iterable and instance[item] is not string %}
+                {% if item != 'appearance' and item != 'image' and item != 'video' %}
                 <td>
+                {% endif %}
+                {% if item is string and item in links %}
+                    <a href="{{ url_for('itempage', item=item, model=links[item]) }}">
+                {% endif %}
+                {% if instance[item] is iterable and instance[item] is not string %}
                     <ul>
                         {% for value in instance[item] %}
+                        {% if value is string and value in links %}
+                            <a href="{{ url_for('itempage', item=value, model=links[value]) }}">
+                        {% endif %}
                         <li>{{value}}</li>
+                        {% if value is string and value in links %}
+                            </a>
+                        {% endif %}
                         {% endfor %}
                     </ul>
-                </td>
                 {% else %}
                     {% if item == 'link' or item == 'wikipedia' %}
-                    <td><a href="{{ instance[item] }}">Wikipedia</a></td>
+                        <a href="{{ instance[item] }}">Wikipedia</a>
                     {% elif item == 'name' %}
-                    <td><a href="{{ url_for('itempage', model=model, item=instance[item]) }}">{{ instance[item] }}</a></td>
+                        <a href="{{ url_for('itempage', model=model, item=instance[item]) }}">{{ instance[item] }}</a>
                     {% elif item == 'appearance' or item == 'image' or item == 'video' %}
                     {% else %}
-                    <td>{{ instance[item] }}</td>
+                        {{ instance[item] }}
                     {% endif %}
+                {% endif %}
+                {% if item is string and item in links %}
+                    </a>
+                {% endif %}
+                {% if item != 'appearance' and item != 'image' and item != 'video' %}
+                </td>
                 {% endif %}
             {% endfor %}
         </tr>
