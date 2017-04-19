@@ -4,6 +4,12 @@
 Home
 {% endblock %}
 
+{% block header %}
+<style>
+	body {background: #d7e2f4}
+</style>
+{% endblock %}
+
 {% block main %}
 <div class="jumbotron">
     <div class="container">
@@ -20,7 +26,7 @@ Home
         We'll educate you all on food and the best parts of it.
     </h3>
 </center>
-<img src="" id="slideshow" alt="Slide Show of Food" height="500" width="500" />
+<img center src="" id="slideshow" alt="Slide Show of Food" height="500" width="500" />
 
 <script type="text/javascript">
     window.onload = rotate;
