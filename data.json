@@ -173,6 +173,7 @@
                     "name": "Chicken Alfredo",
                     "course": "Main Entree",
                     "description": "Chicken Alfredo is a popular pasta dish within the Italian Cuisines. It can be served with or without chicken, however including a meat portion is often encouraged.",
+                    "cuisine": "Italian",
                     "ingredients":[
                         "Chicken",
                         "Parsley",
@@ -194,6 +195,7 @@
                     "name": "Chimichurri",
                     "course": "Condiment",
                     "description": "Chimichurri is a condiment used in a similar fashion as other pestos on most Argentinian meat dishes, such as steak tacos.",
+                    "cuisine": "Argentinian",
                     "ingredients":[
                         "Onion",
                         "Parsley",
@@ -214,6 +216,7 @@
                     "name": "Holy Trinity",
                     "course": "Intermediary dish",
                     "description": "The Holy Trinity is a base of Cajun/Creole cooking, inspired by Mirepoix from the French Cuisine. It is composed of a blend of celery, green bell pepper, and onion with a 1:1:2 ratio. It has a pungent and savoury flavour. The Holy Trinity is used as a base in almost all Cajun/Creole dishes.",
+                    "cuisine": "Cajun",
                     "ingredients":[
                         "Butter or oil",
                         "Onion",
@@ -233,7 +236,8 @@
                 {
                     "name": "Mirepoix",
                     "course": "Intermediary dish",
-                    "description": "Mirepoix is a classic base for French cuisine . It is composed of a blend of celery, carrot, and onion with a 1:1:2 ratio. It is a sweet base, usually addded to stocks/soups/sauces to enhance the flavor (in comparison to plain water). Mirepoix is a great way to add a flare to your favorite dish.",
+                    "description": "Mirepoix is a classic base for French cuisine. It is composed of a blend of celery, carrot, and onion with a 1:1:2 ratio. It is a sweet base, usually addded to stocks/soups/sauces to enhance the flavor (in comparison to plain water). Mirepoix is a great way to add a flare to your favorite dish.",
+                    "cuisine": "French",
                     "ingredients":[
                         "Butter or oil",
                         "Onion",
@@ -254,6 +258,7 @@
                     "name": "Pico De Gallo",
                     "course": "Appetizer",
                     "description": "Pico de gallo is used in much the same way as other Mexican cuisine liquid salsas, but since it contains less liquid, it can also be used as a main ingredient in dishes such as tacos and fajitas.",
+                    "cuisine": "Mexican",
                     "ingredients":[
                         "Cilantro",
                         "Tomato",
@@ -276,6 +281,7 @@
                     "name": "Salad",
                     "course": "Appetizer",
                     "description": "A salad is a dish consisting of a mixture of small pieces of food, which may be mixed with a sauce or salad dressing. This is a common dish in American cuisine",
+                    "cuisine": "American",
                     "ingredients":[
                         "Lettuce",
                         "Tomato",
