@@ -97,7 +97,7 @@
                     "wikipedia": "https://en.wikipedia.org/wiki/Yellow_onion",
                     "recipes": [
                         "Mirepoix",
-                        "Pico de Gallo",
+                        "Pico De Gallo",
                         "Salad",
                         "Holy Trinity"
                     ],
@@ -153,7 +153,7 @@
                     ],
                     "wikipedia": "https://en.wikipedia.org/wiki/Parsley",
                     "recipes": [
-                        "Pico de Gallo",
+                        "Pico De Gallo",
                         "Chimichurri",
                         "Chicken Alfredo"
                     ],
@@ -257,7 +257,7 @@
                 {
                     "name": "Pico De Gallo",
                     "course": "Appetizer",
-                    "description": "Pico de gallo is used in much the same way as other Mexican cuisine liquid salsas, but since it contains less liquid, it can also be used as a main ingredient in dishes such as tacos and fajitas.",
+                    "description": "Pico De Gallo is used in much the same way as other Mexican cuisine liquid salsas, but since it contains less liquid, it can also be used as a main ingredient in dishes such as tacos and fajitas.",
                     "cuisine": "Mexican",
                     "ingredients":[
                         "Cilantro",
@@ -416,7 +416,7 @@
                         "Elena Reygades"
                     ],
                     "recipes": [
-                        "Pico de Gallo"
+                        "Pico De Gallo"
                     ],
                     "ingredients": [
                         "Onion",
