@@ -35,9 +35,12 @@ def about():
 # Model page
 @app.route("/<model>/")
 def modelpage(model):
-    pagedata = data[model.title()]
-    pagedata['links'] = links
-    return render_template("modelbase.html", **pagedata)
+    try:
+        pagedata = data[model.title()]
+        pagedata['links'] = links
+        return render_template("modelbase.html", **pagedata)
+    except:
+        abort(404)
 
 # Model item page
 @app.route("/<model>/<item>")
