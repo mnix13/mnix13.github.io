@@ -24,7 +24,7 @@
                 <ul>
                     {% for thing in item[i] %}
                         {% if thing in links %}
-                            <a href="{{ url_for('itempage', item=item[i], model=links[item[i]]) }}">
+                            <a href="{{ url_for('itempage', item=thing, model=links[thing]) }}">
                         {% endif %}
                         <li>{{thing}}</li>
                         {% if thing in links %}
