@@ -345,7 +345,7 @@
                         "Lime juice",
                         "Cumin and Coriander"
                     ],
-                    "image": "/static/img/argentina.jpg",
+                    "image": "/static/img/argentina.png",
                     "link": "https://en.wikipedia.org/wiki/Argentine_cuisine"
                 },
                 {
@@ -404,7 +404,7 @@
                         "Various Sauces",
                         "Various Pasta Noodles"
                     ],
-                    "image": "/static/img/italian.svg.png",
+                    "image": "/static/img/italian.png",
                     "link": "https://en.wikipedia.org/wiki/Italian_cuisine"
                 },
                 {
