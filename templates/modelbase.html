@@ -23,41 +23,40 @@
     <tbody>
         {% for instance in instances %}
         <tr>
-            <td>{{ instance['name'] }}</td>
+            <td><a href="{{ url_for('itempage', item=instance['name'], model=links[instance['name']]) }}">{{ instance['name'] }}</a></td>
             {% for item in instance %}
                 {% if item != 'appearance' and item != 'image' and item != 'video' and item != 'name' %}
-                <td>
-                {% endif %}
-                {% if item is string and item in links %}
-                    <a href="{{ url_for('itempage', item=item, model=links[item]) }}">
-                {% endif %}
-                {% if instance[item] is iterable and instance[item] is not string %}
-                    <ul>
-                        {% for value in instance[item] %}
-                        {% if value is string and value in links %}
-                            <a href="{{ url_for('itempage', item=value, model=links[value]) }}">
+                    <td>
+                        {% if item is string and item in links %}
+                            <a href="{{ url_for('itempage', item=item, model=links[item]) }}">
                         {% endif %}
-                        <li>{{value}}</li>
-                        {% if value is string and value in links %}
+
+                        {% if instance[item] is iterable and instance[item] is not string %}
+                            <ul>
+                                {% for value in instance[item] %}
+                                    {% if value is string and value in links %}
+                                        <a href="{{ url_for('itempage', item=value, model=links[value]) }}">
+                                    {% endif %}
+                                    <li>{{value}}</li>
+                                    {% if value is string and value in links %}
+                                        </a>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            {% if item == 'link' or item == 'wikipedia' %}
+                                <a href="{{ instance[item] }}">Wikipedia</a>
+                            {% elif item == 'name' %}
+                                <a href="{{ url_for('itempage', model=model, item=instance[item]) }}">{{ instance[item] }}</a>
+                            {% else %}
+                                {{ instance[item] }}
+                            {% endif %}
+                        {% endif %}
+
+                        {% if item is string and item in links %}
                             </a>
                         {% endif %}
-                        {% endfor %}
-                    </ul>
-                {% else %}
-                    {% if item == 'link' or item == 'wikipedia' %}
-                        <a href="{{ instance[item] }}">Wikipedia</a>
-                    {% elif item == 'name' %}
-                        <a href="{{ url_for('itempage', model=model, item=instance[item]) }}">{{ instance[item] }}</a>
-                    {% elif item == 'appearance' or item == 'image' or item == 'video' %}
-                    {% else %}
-                        {{ instance[item] }}
-                    {% endif %}
-                {% endif %}
-                {% if item is string and item in links %}
-                    </a>
-                {% endif %}
-                {% if item != 'appearance' and item != 'image' and item != 'video' %}
-                </td>
+                    </td>
                 {% endif %}
             {% endfor %}
         </tr>
