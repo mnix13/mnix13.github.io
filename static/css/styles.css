@@ -1,4 +1,4 @@
-body {
+#main  {
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -8,10 +8,9 @@ html > body > #main > .jumbotron{
 	
 	background-image: url("../img/splash.jpg");
 	background-position: center;
-	
-}
-	text-align: center;
 	color: white;
+	text-align: center;
+	
 }
 
 html > body> #main > #slideshow {
@@ -19,17 +18,23 @@ html > body> #main > #slideshow {
 	margin: auto; 
 }
 
+
 table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
     width: 100%;
-	border: 1px solid black;
-	border-top-color: black;
 }
 
 td, th {
-    border: 1px solid black;
     text-align: left;
-    padding: 8px;
+    padding: 5px;
 	border-top-color: black;
+}
+
+thead{
+	font-size: 18px; 
+	font-style:bold;
+}
+
+td { 
+	font-size: 80%;
 }
