@@ -4,8 +4,6 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" />
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
-<<<<<<< HEAD
-=======
 
 {% endblock %}
 
@@ -14,8 +12,9 @@
     <h1>{{ model }}</h1>
     <thead>
         <tr>
+            <td>Name</td>
             {% for item in instances[0] %}
-                {% if item != 'appearance' and item != 'image' and item != 'video' %}
+                {% if item != 'appearance' and item != 'image' and item != 'video' and item != 'name' %}
                     <td>{{ item.title() }}</td>
                 {% endif %}
             {% endfor %}
@@ -24,8 +23,9 @@
     <tbody>
         {% for instance in instances %}
         <tr>
+            <td>{{ instance['name'] }}</td>
             {% for item in instance %}
-                {% if item != 'appearance' and item != 'image' and item != 'video' %}
+                {% if item != 'appearance' and item != 'image' and item != 'video' and item != 'name' %}
                 <td>
                 {% endif %}
                 {% if item is string and item in links %}
